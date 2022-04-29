@@ -40,15 +40,15 @@ for (let i = 0; i < team.length; i++) {
   // console.log(teamMember);
   console.log(teamMember.name, teamMember.role, teamMember.image);
 
-  const container = document.getElementById("container");
+  //MILESTONE 2:
+  // stampare le stesse informazioni su DOM sottoforma di stringhe
+  const container = document.getElementById("team-container");
   // console.log(container);
   const memberString = document.createElement("div");
   memberString.innerHTML = `${teamMember.name} ${teamMember.role} ${teamMember.image}`;
   container.appendChild(memberString);
 }
 
-//MILESTONE 2:
-// stampare le stesse informazioni su DOM sottoforma di stringhe
 //BONUS 1:
 // trasformare la stringa foto in una immagine effettivaBONUS 2:
 // organizzare i singoli membri in card/schedeBONUS 3:
